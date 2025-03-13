@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- HTML Meta Tags -->
+    <title>Mini Project Revo-U by Dimas Ardi Setiawan</title>
+    <meta name="author" content="Dimas">
+    <meta name="description" content="Web ini dibuat untuk Mini Project Kursus Fundamental Software Engineer Revo-U">
+
+    <!-- X Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="revou-fundamental-course.github.io">
+    <meta property="twitter:url" content="https://revou-fundamental-course.github.io/03-mar-25-dimasardis15/">
+    <meta name="twitter:title" content="Mini Project Revo-U by Dimas">
+    <meta name="twitter:description" content="Web ini dibuat untuk Mini Project Kursus Fundamental Software Engineer Revo-U">
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Assets/Logo/burgerfresh.png" width="100%">
+        
+            </div>
+
+            <!-- Navigation -->
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#about-us">Our Profile</a>
+                <a href="#facilities">Facilities</a>
+                <a href="#message-us">Message Us</a>
+            </nav>
+
+            <!-- Burger Menu -->
+            <div class="burger-menu" id="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 id="welcome-note">Halo <span id="username"></span>, Selamat Datang di Burger Fresh</h1>
+                <p>Web ini dibuat untuk Mini Project Kursus Fundamental Software Engineer Revo-U</p>
+                <a href="#about-us" class="cta">Lihat Detail</a>
+            </div>
+        </section>        
+        
+        <section id="our-profiles">
+            <div class="content">
+                <h2 id="about-us">Our profile</h2>
+                <!-- banner auto slides -->
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="Assets/Slides/2.jpg" style="width:25%">
+                      <div class="text">Roti empuk, daging juara, sausnya bikin ketagihan. Burger sempurna!"
+                    </div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="Assets/Slides/3.jpg" style="width:25%">
+                      <div class="text">"Nikmati sensasi burger lezat yang meleleh di mulut."
+                    </div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="Assets/Slides/4.jpg" style="width:25%">
+                      <div class="text">"Setiap lapisan rasa, menyatu menjadi kenikmatan yang tak terlupakan."
+                    </div>
+                    </div>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>       
+            </div>
+        </section>        
+
+        <!-- Facilities Section -->
+        <section class="facilities" id="facilities">
+            <h2>Our Facilities</h2>
+            <div class="facility-grid">
+                <div class="facility-card">
+                    <div class="facility-icon">
+                    </div>
+                    <p>High Quality</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">
+                    </div>
+                    <p>Lezat, Nikmat, dan Bergizi</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">
+                    </div>
+                    <p>Approved Chef Ternama</p>
+                </div>
+            </div>
+        </section>                                
+
+        <!-- Message Us -->
+        <section id="message-us">
+            <h2>Message US</h2>
+            <div class="message-container">
+                <form id="message-form">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter Your Name" required>
+                    </div>
+                    <div>
+                        <label for="dob">Date of birth</label>
+                        <input type="date" id="dob" required>
+                    </div>
+                    <div>
+                        <label>Gender</label>
+                        <div class="gender-options">
+                            <label>
+                                <input type="radio" name="gender" value="Male (Laki-Laki)" required> Male
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="Female (Perempuan)" required> Female
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message">message</label>
+                        <textarea id="message" placeholder="Leave your message here..." required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+        
+                <div id="message-output">
+                    <p>Real-Time Clock: <span id="current-time"></span></p>
+                    <p>Name : <span id="output-name"></span></p>
+                    <p>Date of birth : <span id="output-dob"></span></p>
+                    <p>Gender : <span id="output-gender"></span></p>
+                    <p>Message : <span id="output-message"></span></p>
+                </div>
+            </div>
+        </section>        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+            <p>Site by Dimas &#10084;</p>
+    </footer>
+
+<!-- Pop-up Modal -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <h2>Welcome! What's Your Name?</h2>
+        <input type="text" id="nameInput" placeholder="Enter your name" />
+        <button id="submitBtn">Submit</button>
+    </div>
+</div>
+
+    <!-- JavaScript -->
+    <script src="Javascript/script.js"></script>
+</body>
+</html>
